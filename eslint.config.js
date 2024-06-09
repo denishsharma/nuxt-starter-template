@@ -7,6 +7,12 @@ export default withNuxt(
     antfu({
         formatters: true,
         vue: true,
+        unocss: {
+            strict: true,
+        },
+        typescript: {
+            tsconfigPath: "tsconfig.json",
+        },
         stylistic: {
             indent: 4,
             semi: true,
@@ -42,6 +48,7 @@ export default withNuxt(
                 },
             ],
             "import/newline-after-import": ["error", { count: 1 }],
+            "unocss/enforce-class-compile": "warn",
             "no-console": ["warn", { allow: ["warn", "error"] }],
             "no-debugger": "warn",
             "vue/max-attributes-per-line": [

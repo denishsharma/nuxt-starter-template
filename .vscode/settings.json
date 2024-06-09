@@ -41,5 +41,8 @@
         "postcss"
     ],
     "typescript.tsdk": "node_modules/typescript/lib",
-    "conventionalCommits.emojiFormat": "emoji"
+    "conventionalCommits.emojiFormat": "emoji",
+    "css.customData": [
+        ".vscode/unocss.json"
+    ]
 }
