@@ -30,6 +30,8 @@ export default defineNuxtConfig({
         "@nuxt/scripts",
         "nuxt-lodash",
         "nuxt-typed-router",
+        "@pinia/nuxt",
+        "@pinia-plugin-persistedstate/nuxt",
     ],
     seo: {
         debug: isDevelopment,
@@ -42,6 +44,12 @@ export default defineNuxtConfig({
     },
     svgo: {
         autoImportPath: "~/assets",
+    },
+    piniaPersistedstate: {
+        debug: isDevelopment,
+        cookieOptions: {
+            secure: !isDevelopment,
+        },
     },
     eslint: {
         config: {
