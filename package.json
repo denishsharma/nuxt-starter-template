@@ -62,6 +62,7 @@
         "eslint-plugin-format": "^0.1.1",
         "lint-staged": "^15.2.5",
         "nuxt": "^3.11.2",
+        "nuxt-api-party": "^2.0.5",
         "nuxt-icon": "^0.6.10",
         "nuxt-lodash": "^2.5.3",
         "nuxt-svgo": "^4.0.1",

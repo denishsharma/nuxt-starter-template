@@ -32,6 +32,7 @@ export default defineNuxtConfig({
         "nuxt-typed-router",
         "@pinia/nuxt",
         "@pinia-plugin-persistedstate/nuxt",
+        "nuxt-api-party",
     ],
     seo: {
         debug: isDevelopment,
