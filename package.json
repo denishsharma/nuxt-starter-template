@@ -1,0 +1,64 @@
+{
+    "name": "nuxt-starter-template",
+    "type": "module",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Nuxt 3 minimal starter template with TypeScript, ESLint, Vue 3, and more.",
+    "author": {
+        "name": "Denish Sharma",
+        "email": "denishcommon@gmail.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/denishsharma/nuxt-starter-template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/denishsharma/nuxt-starter-template/issues"
+    },
+    "keywords": [
+        "nuxt",
+        "starter",
+        "template",
+        "typescript",
+        "eslint",
+        "vue",
+        "boilerplate",
+        "nuxt3",
+        "vue3",
+        "starter-template",
+        "kit"
+    ],
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint": "eslint . --fix",
+        "type-check": "vue-tsc --noEmit"
+    },
+    "dependencies": {
+        "vue": "^3.4.27",
+        "vue-router": "^4.3.2"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^2.21.0",
+        "@nuxt/eslint": "^0.3.13",
+        "@types/node": "^20.14.2",
+        "eslint": "8.57.0",
+        "eslint-plugin-format": "^0.1.1",
+        "lint-staged": "^15.2.5",
+        "nuxt": "^3.11.2",
+        "simple-git-hooks": "^2.11.1",
+        "std-env": "^3.7.0",
+        "typescript": "^5.4.5",
+        "vue-tsc": "^1"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "pnpm lint-staged"
+    },
+    "lint-staged": {
+        "*": ["eslint --fix"]
+    }
+}
