@@ -24,6 +24,12 @@ export default defineNuxtConfig({
         "@nuxt/fonts",
         "@nuxtjs/seo",
         "@nuxtjs/color-mode",
+        "nuxt-icon",
+        "nuxt-svgo",
+        "@vueuse/nuxt",
+        "@nuxt/scripts",
+        "nuxt-lodash",
+        "nuxt-typed-router",
     ],
     seo: {
         debug: isDevelopment,
@@ -33,6 +39,9 @@ export default defineNuxtConfig({
         globalName: "__APP_COLOR_MODE__",
         storageKey: "app-color-mode",
         hid: "app-color-mode-script",
+    },
+    svgo: {
+        autoImportPath: "~/assets",
     },
     eslint: {
         config: {
