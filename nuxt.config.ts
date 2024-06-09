@@ -23,9 +23,16 @@ export default defineNuxtConfig({
         "@unocss/nuxt",
         "@nuxt/fonts",
         "@nuxtjs/seo",
+        "@nuxtjs/color-mode",
     ],
     seo: {
         debug: isDevelopment,
+    },
+    colorMode: {
+        classSuffix: "",
+        globalName: "__APP_COLOR_MODE__",
+        storageKey: "app-color-mode",
+        hid: "app-color-mode-script",
     },
     eslint: {
         config: {
