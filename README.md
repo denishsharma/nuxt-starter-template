@@ -1,75 +1,52 @@
-# Nuxt 3 Minimal Starter
+# Nuxt Starter Template
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a simple React starter template that allows you to quickly get started with a new Nuxt 3 project.
+Supercharge your development with pre-configured development tools, such as eslint, simple-git-hooks, and pnpm.
 
-## Setup
+This template also includes a simple `features` folder that modularize your application into different features.
+Each feature is a self-contained module that includes its own components, stores, fragments, styles, etc.
 
-Make sure to install the dependencies:
+## Pre-configured Tools & Modules
+
+-   ESLint: Lint your code with opinionated configurations that help you write better code.
+-   Simple Git Hooks: Run scripts before committing, pushing, and more.
+-   Color Mode: Toggle between light and dark mode.
+-   API Party: Request third-party APIs with proxy support and caching.
+-   VueUse: Collection of essential Vue Composition API utils.
+-   UnoCSS: Utility-first CSS framework for rapid UI development.
+-   Icons: 100 thousand+ icons from popular icon sets like Font Awesome, Material Design, etc.
+-   SEO: Optimize your app for search engines with meta-tags and structured data.
+
+## Getting Started
+
+Copy and paste the following command to create a new project using this template:
 
 ```bash
-# npm
-npm install
+# Only works on Unix-based systems with bash
+read -p "Enter directory name: " dirname && git clone --single-branch --branch main https://github.com/denishsharma/nuxt-starter-template.git "$dirname" && cd "$dirname" && rm -rf .git && { command -v pnpm >/dev/null 2>&1 || { echo >&2 "pnpm is not installed. Installing..."; npm install -g pnpm; }; } && pnpm install
+```
 
-# pnpm
+To get started, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/denishsharma/nuxt-starter-template.git
+cd nuxt-starter-template
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Then, start the development server:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-Build the application for production:
+-   Remove the "welcome" feature from the `features/` directory.
+-   Update the `name`, `version`, `description`, `author`, and `repository` fields in the `package.json` file.
+-   Update site details in the `nuxt.config.ts` file under the `site` object.
 
-```bash
-# npm
-npm run build
+## Author
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+-   Name: Denish Sharma
+-   Email: [denishcommon@gmail.com](matilto://denishcommon@gmail.com)
