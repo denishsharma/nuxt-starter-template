@@ -44,6 +44,7 @@
     },
     "devDependencies": {
         "@antfu/eslint-config": "^2.21.0",
+        "@iconify/json": "^2.2.217",
         "@nuxt/eslint": "^0.3.13",
         "@nuxt/fonts": "^0.7.0",
         "@nuxt/scripts": "^0.4.7",
@@ -55,7 +56,9 @@
         "@unocss/eslint-plugin": "^0.60.4",
         "@unocss/extractor-arbitrary-variants": "^0.60.4",
         "@unocss/nuxt": "^0.60.4",
+        "@vueuse/components": "^10.10.0",
         "@vueuse/core": "^10.10.0",
+        "@vueuse/math": "^10.10.0",
         "@vueuse/nuxt": "^10.10.0",
         "eslint": "8.57.0",
         "eslint-plugin-command": "^0.2.3",
@@ -64,10 +67,12 @@
         "nuxt": "^3.11.2",
         "nuxt-api-party": "^2.0.5",
         "nuxt-icon": "^0.6.10",
-        "nuxt-lodash": "^2.5.3",
         "nuxt-svgo": "^4.0.1",
         "nuxt-typed-router": "^3.6.3",
+        "overlayscrollbars": "^2.8.3",
+        "overlayscrollbars-vue": "^0.5.9",
         "pinia": "^2.1.7",
+        "radash": "^12.1.0",
         "sass": "^1.77.4",
         "simple-git-hooks": "^2.11.1",
         "std-env": "^3.7.0",
@@ -75,7 +80,8 @@
         "unocss": "^0.60.4",
         "unocss-preset-animations": "^1.0.2",
         "unocss-preset-useful": "^0.4.2",
-        "vue-tsc": "^1"
+        "vue-tsc": "^1.8.27",
+        "zod": "^3.23.8"
     },
     "simple-git-hooks": {
         "pre-commit": "pnpm lint-staged"

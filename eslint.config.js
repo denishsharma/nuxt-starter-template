@@ -10,9 +10,6 @@ export default withNuxt(
         unocss: {
             strict: true,
         },
-        typescript: {
-            tsconfigPath: "tsconfig.json",
-        },
         stylistic: {
             indent: 4,
             semi: true,

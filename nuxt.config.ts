@@ -4,6 +4,15 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     app: {
         rootId: "__app",
+        head: {
+            link: [
+                {
+                    rel: "icon",
+                    type: "image/svg",
+                    href: "/favicon.svg",
+                },
+            ],
+        },
     },
     site: {
         name: "Nuxt Starter Template",
@@ -28,12 +37,21 @@ export default defineNuxtConfig({
         "nuxt-svgo",
         "@vueuse/nuxt",
         "@nuxt/scripts",
-        "nuxt-lodash",
         "nuxt-typed-router",
         "@pinia/nuxt",
         "@pinia-plugin-persistedstate/nuxt",
         "nuxt-api-party",
     ],
+    apiParty: {
+        server: {
+            basePath: "_proxy_",
+        },
+        endpoints: {
+            jsonPlaceholder: {
+                url: "https://jsonplaceholder.typicode.com",
+            },
+        },
+    },
     seo: {
         debug: isDevelopment,
     },
@@ -42,6 +60,7 @@ export default defineNuxtConfig({
         globalName: "__APP_COLOR_MODE__",
         storageKey: "app-color-mode",
         hid: "app-color-mode-script",
+        disableTransition: true,
     },
     svgo: {
         autoImportPath: "~/assets",

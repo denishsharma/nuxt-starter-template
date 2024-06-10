@@ -1,5 +1,3 @@
 <template>
-    <div>
-        Home Page
-    </div>
+    <WelcomeFeature />
 </template>
