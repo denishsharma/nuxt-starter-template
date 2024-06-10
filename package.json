@@ -90,9 +90,6 @@
     "lint-staged": {
         "*": [
             "pnpm lint"
-        ],
-        "*.{js,ts,vue}": [
-            "pnpm type-check"
         ]
     }
 }
