@@ -1,6 +1,6 @@
 # Nuxt Starter Template
 
-This is a simple React starter template that allows you to quickly get started with a new Nuxt 3 project.
+This is a simple Nuxt 3 starter template that allows you to quickly get started with a new Nuxt 3 project.
 Supercharge your development with pre-configured development tools, such as eslint, simple-git-hooks, and pnpm.
 
 This template also includes a simple `features` folder that modularize your application into different features.
