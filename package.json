@@ -88,7 +88,10 @@
     },
     "lint-staged": {
         "*": [
-            "eslint --fix"
+            "pnpm lint"
+        ],
+        "*.{js,ts,vue}": [
+            "pnpm type-check"
         ]
     }
 }

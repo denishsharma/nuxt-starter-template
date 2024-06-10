@@ -1,4 +1,4 @@
-export function useInjectionStateStore<S, A>(name: string, injectionStore: () => S & A | undefined, defaultValue?: S & A) {
+export function useInjectionStateStore<T>(name: string, injectionStore: () => T | undefined, defaultValue?: T) {
     return () => {
         const store = injectionStore();
         if (defaultValue !== undefined && store === undefined) {
