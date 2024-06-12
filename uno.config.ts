@@ -1,4 +1,3 @@
-import extractorArbitraryVariants from "@unocss/extractor-arbitrary-variants";
 import { isProduction } from "std-env";
 import { defineConfig, presetIcons, presetUno, transformerCompileClass, transformerDirectives, transformerVariantGroup } from "unocss";
 import presetAnimations from "unocss-preset-animations";
@@ -16,5 +15,4 @@ export default defineConfig({
         transformerVariantGroup(),
         ...(isProduction ? [transformerCompileClass({ classPrefix: "x-" })] : []),
     ],
-    extractors: [extractorArbitraryVariants],
 });
