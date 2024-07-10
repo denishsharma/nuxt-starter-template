@@ -9,22 +9,28 @@ export default withNuxt(
         vue: true,
         unocss: {
             strict: true,
+            overrides: {
+                "unocss/enforce-class-compile": "warn",
+            },
         },
         stylistic: {
             indent: 4,
             semi: true,
             quotes: "double",
+            overrides: {
+                "style/array-bracket-newline": ["error", { multiline: true, minItems: 3 }],
+                "style/function-call-argument-newline": ["error", "consistent"],
+                "style/brace-style": [
+                    "error",
+                    "1tbs",
+                    { allowSingleLine: true },
+                ],
+                "style/max-statements-per-line": ["error", { max: 2 }],
+            },
         },
         rules: {
-            "style/array-bracket-newline": ["error", { multiline: true, minItems: 3 }],
-            "style/function-call-argument-newline": ["error", "consistent"],
-            "style/brace-style": [
-                "error",
-                "1tbs",
-                { allowSingleLine: true },
-            ],
-            "style/max-statements-per-line": ["error", { max: 2 }],
             "antfu/if-newline": "off",
+
             "import/order": [
                 "error",
                 {
@@ -45,9 +51,10 @@ export default withNuxt(
                 },
             ],
             "import/newline-after-import": ["error", { count: 1 }],
-            "unocss/enforce-class-compile": "warn",
+
             "no-console": ["warn", { allow: ["warn", "error"] }],
             "no-debugger": "warn",
+
             "vue/max-attributes-per-line": [
                 "error",
                 {
