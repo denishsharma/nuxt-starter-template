@@ -1,7 +1,7 @@
 import { ClickScrollPlugin, OverlayScrollbars } from "overlayscrollbars";
 
-export default defineNuxtPlugin((nuxtApp) => {
-    nuxtApp.hook("app:beforeMount", () => {
+export default defineNuxtPlugin((app) => {
+    app.hook("app:beforeMount", () => {
         OverlayScrollbars.plugin([ClickScrollPlugin]);
     });
 });

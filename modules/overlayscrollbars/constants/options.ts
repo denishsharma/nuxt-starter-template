@@ -1,6 +1,8 @@
 import type { OverlayScrollbarsComponentProps } from "overlayscrollbars-vue";
 
-export const defaultOverlayscrollbarsOptions: OverlayScrollbarsComponentProps["options"] = {
+type OverlayScrollbarsOptions = OverlayScrollbarsComponentProps["options"];
+
+export const defaultOverlayscrollbarsOptions: OverlayScrollbarsOptions = {
     overflow: {
         x: "hidden",
     },

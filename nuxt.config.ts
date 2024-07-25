@@ -33,7 +33,7 @@ export default defineNuxtConfig({
         "@nuxt/fonts",
         "@nuxtjs/seo",
         "@nuxtjs/color-mode",
-        "nuxt-icon",
+        "@nuxt/icon",
         "nuxt-svgo",
         "@vueuse/nuxt",
         "@nuxt/scripts",

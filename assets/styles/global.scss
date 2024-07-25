@@ -5,5 +5,5 @@
 @import "overrides/overlayscrollbars";
 
 body {
-    @apply font-normal w-full bg-white text-gray-900 of-x-hidden scroll-smooth;
+    @apply font-normal w-full bg-white text-gray-900 dark:(bg-dark-600 text-light-50) of-x-hidden scroll-smooth;
 }

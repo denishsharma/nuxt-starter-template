@@ -3,7 +3,7 @@
 
     .os-scrollbar-track {
         .os-scrollbar-handle {
-            @apply bg-dark-100/80 rounded-full;
+            @apply dark:(bg-dark-100/80) bg-dark-100/30 rounded-full;
         }
     }
 }
