@@ -31,7 +31,7 @@ const currentYear = useDateFormat(useNow(), "YYYY");
         <div class=":uno: relative h-dvh">
             <OverlayScrollbarsComponent
                 :defer="true"
-                :options="defaultOverlayscrollbarsOptions"
+                :options="{ overflow: { x: 'hidden' }, scrollbars: { autoHide: 'move', clickScroll: true } }"
                 class=":uno: h-full p-10"
             >
                 <div class=":uno: min-h-full flex items-center justify-center">

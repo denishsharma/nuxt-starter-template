@@ -2,6 +2,9 @@ import { isDevelopment } from "std-env";
 
 export default defineNuxtConfig({
     devtools: { enabled: true },
+    future: {
+        compatibilityVersion: 4,
+    },
     app: {
         rootId: "__app",
         head: {
@@ -17,6 +20,7 @@ export default defineNuxtConfig({
     site: {
         name: "Nuxt Starter Template",
         description: "Nuxt 3 minimal starter template wih Vue 3, TypeScript, Unocss, SEO and more. Made by Denish Sharma",
+        defaultLocale: "en",
     },
     typescript: {
         typeCheck: "build",
@@ -26,7 +30,7 @@ export default defineNuxtConfig({
             },
         },
     },
-    css: ["~/assets/styles/global.scss"],
+    css: ["~/assets/styles/main.scss"],
     modules: [
         "@nuxt/eslint",
         "@unocss/nuxt",
