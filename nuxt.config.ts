@@ -80,4 +80,13 @@ export default defineNuxtConfig({
             standalone: false,
         },
     },
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    silenceDeprecations: ["legacy-js-api"],
+                },
+            },
+        },
+    },
 });
